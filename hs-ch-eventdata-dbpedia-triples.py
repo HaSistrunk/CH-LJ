@@ -39,31 +39,31 @@ x = re.compile('([\w]{4}[\W]{3}[a-q]{7}[^\s]+)')
 m = x.findall(chstring)
 
 print (m)
-##
-##print('Number of Carnegie Hall People in dbpedia:', len(m))
-##
-##
-###Wrap list items in a URIRef
-##
-##ch_dbplist = []
-##
-##for obj in m:
-##    if obj not in ch_dbplist:
-##        ch_dbplist.append(URIRef(obj))
-##
-###print (ch_dbplist)
+
+print('Number of Carnegie Hall People in dbpedia:', len(m))
+
+
+#Wrap list items in a URIRef
+
+ch_dbplist = []
+
+for obj in m:
+    if obj not in ch_dbplist:
+        ch_dbplist.append(URIRef(obj))
+
+#print (ch_dbplist)
 
 #Create new graph and load ch dbpedia triples into it
 
-##g= Graph()
-##
-##for s,p,o in ch:
-##    for uri in ch_dbplist:
-##        if o == uri:
-##            g.add((s,p,o))
-##
-##print ('Number of Carnegie Hall Events that include people in dbpedia:', len(g))
-##g.serialize('ch_dbpedia_triples.nt', format='nt')
+g= Graph()
+
+for s,p,o in ch:
+    for uri in ch_dbplist:
+        if o == uri:
+            g.add((s,p,o))
+
+print ('Number of Carnegie Hall Events that include people in dbpedia:', len(g))
+g.serialize('ch_dbpedia_triples.nt', format='nt')
         
 
 

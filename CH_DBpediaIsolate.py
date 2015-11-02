@@ -25,9 +25,9 @@ for s,p,o in ch:
         if o not in chlist:
             #build list from objects because subject repeats
             chlist.append(o)
-    
+
     else:
-        if "data.carnegiehall" in o:
+        if "data.carnegiehall.org/names" in o:
             if o not in mintsCH:
                 mintsCH.append(o)
 
@@ -42,8 +42,6 @@ mintstring = ' '.join(mintsCH)
 #write out json file
 with open ('CH_dbpedia.json', 'w') as f:
     f.write(json.dumps(chlist ,indent=4))
-    
+
 with open ('CH_mints.json', 'w') as f:
     f.write(json.dumps(mintsCH ,indent=4))
-    
-    

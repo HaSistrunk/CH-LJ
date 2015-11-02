@@ -13,4 +13,6 @@ p = re.compile('.{36}(\w+\_\w+)')
 
 m = p.findall(mintstring)
 
-print(m)
+# print(m)
+with open('CH_namesOnly.json','w') as f:
+    f.write(json.dumps(m,indent=4))

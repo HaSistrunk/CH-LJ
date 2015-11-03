@@ -33,9 +33,7 @@ for s,p,o in ch:
 
     # print(len(ch))
 
-# #convert to string
-chstring = ' '.join(chlist)
-mintstring = ' '.join(mintsCH)
+
 
 # print (chstring)
 

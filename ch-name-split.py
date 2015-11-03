@@ -1,4 +1,4 @@
-import re
+
 import json
 
 #open json file and load

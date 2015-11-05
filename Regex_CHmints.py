@@ -18,6 +18,6 @@ m = p.findall(mintstring)
 
 # print(m)
 
-#write out to json file
+# write out to json file
 with open('CH_namesOnly.json','w') as f:
     f.write(json.dumps(m,indent=4))

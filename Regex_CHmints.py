@@ -10,7 +10,7 @@ with open('CH_mints.json') as json_data:
 #convert to string
 mintstring = ' '.join(d)
 
-#compile regex to isolate just FirstName_LastName
+#compile regex to isolate names only
 p = re.compile('names/(\w+)')
 
 #find in string

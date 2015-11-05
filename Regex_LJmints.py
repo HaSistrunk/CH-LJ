@@ -13,16 +13,16 @@ with open('LJ-mints.json') as json_data:
 mintstring = ' '.join(d)
 
 #compile regex to isolate just FirstName_LastName
-p = re.compile('.{32}(\w+\_\w+)')
+p = re.compile('resource/(\S+)')
 
 #find in string
 m = p.findall(mintstring)
 
-print (len(m))
+#print (len(m))
 
-###write out to json file
-##with open('LJ_namesOnly.json','w') as f:
-##    f.write(json.dumps(m,indent=4))
+#write out to json file
+with open('LJ_namesOnly.json','w') as f:
+    f.write(json.dumps(m,indent=4))
 
 
 

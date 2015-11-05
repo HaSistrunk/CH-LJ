@@ -11,12 +11,12 @@ with open('CH_mints.json') as json_data:
 mintstring = ' '.join(d)
 
 #compile regex to isolate just FirstName_LastName
-p = re.compile('.{36}(\w+\_\w+)')
+p = re.compile('names/(\w+)')
 
 #find in string
 m = p.findall(mintstring)
 
-# print(m)
+print(len(m))
 
 # write out to json file
 with open('CH_namesOnly.json','w') as f:

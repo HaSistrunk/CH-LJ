@@ -11,7 +11,7 @@ with open('CH_mints.json') as json_data:
 mintstring = ' '.join(d)
 
 #compile regex to isolate names only
-p = re.compile('names/(\w+)')
+p = re.compile('names/(\S+)')
 
 #find in string
 m = p.findall(mintstring)

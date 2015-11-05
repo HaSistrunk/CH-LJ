@@ -34,7 +34,7 @@
     [
         "String",
         "Orchestra",
-        ""
+        "(Unspecified)"
     ],
     [
         "Royal",
@@ -190,7 +190,7 @@
     ],
     [
         "Hank",
-        "D"
+        "D%27Amico"
     ],
     [
         "Mickey",
@@ -379,7 +379,7 @@
     [
         "Jimmy",
         "Carroll",
-        ""
+        "(i)"
     ],
     [
         "Arnold",
@@ -441,7 +441,10 @@
     ],
     [
         "Mel",
-        "Powell"
+        "Powell%27s",
+        "All-Star",
+        "Jazz",
+        "Band"
     ],
     [
         "Ted",
@@ -506,7 +509,8 @@
     ],
     [
         "WC",
-        "Handy"
+        "Handy%27s",
+        "Orchestra"
     ],
     [
         "A",
@@ -568,7 +572,9 @@
         "Manners"
     ],
     [
-        "Mitchell"
+        "Mitchell%27s",
+        "Christian",
+        "Singers"
     ],
     [
         "Eugene",
@@ -641,7 +647,7 @@
     [
         "Charles",
         "Stewart",
-        ""
+        "(i)"
     ],
     [
         "Harlemonicats"
@@ -729,7 +735,7 @@
     [
         "John",
         "Brown",
-        ""
+        "(i)"
     ],
     [
         "Tom",
@@ -752,7 +758,9 @@
     ],
     [
         "Count",
-        "Basie"
+        "Basie%27s",
+        "Blue",
+        "Five"
     ],
     [
         "Gerry",
@@ -827,7 +835,9 @@
     ],
     [
         "Eddie",
-        "Condon"
+        "Condon%27s",
+        "Jazz",
+        "Group"
     ],
     [
         "Billy",
@@ -855,11 +865,13 @@
     ],
     [
         "St",
-        "Philip"
+        "Philip%27s",
+        "Church",
+        "Choir"
     ],
     [
         "George",
-        "O"
+        "O%27Neill"
     ],
     [
         "Charlie",
@@ -970,7 +982,7 @@
     ],
     [
         "Orchestra",
-        ""
+        "(unspecified)"
     ],
     [
         "Charlie",
@@ -1205,7 +1217,9 @@
         "Marmein"
     ],
     [
-        "All"
+        "All-American",
+        "All-Stars",
+        "The"
     ],
     [
         "Phyllis",
@@ -1406,7 +1420,9 @@
     ],
     [
         "Andrew",
-        "Dorsey"
+        "Dorsey%27s",
+        "Negro",
+        "Choir"
     ],
     [
         "Symphony",
@@ -1606,7 +1622,7 @@
     ],
     [
         "Alfonso",
-        "D"
+        "D%27Artega"
     ],
     [
         "Canada",
@@ -1652,7 +1668,7 @@
     ],
     [
         "Chorus",
-        ""
+        "(unspecified)"
     ],
     [
         "Betty",
@@ -1687,7 +1703,7 @@
     ],
     [
         "Marie",
-        "Roemaet"
+        "Roemaet-Rosanoff"
     ],
     [
         "Abraham",
@@ -1798,7 +1814,9 @@
     ],
     [
         "Deacon",
-        "Johnson"
+        "Johnson%27s",
+        "Martinique",
+        "Quartet"
     ],
     [
         "Willard",
@@ -1823,7 +1841,8 @@
     ],
     [
         "Dan",
-        "Burley"
+        "Burley%27s",
+        "Skifflers"
     ],
     [
         "Gilbert",
@@ -2019,7 +2038,7 @@
     [
         "Al",
         "Jackson",
-        ""
+        "(i)"
     ],
     [
         "Maggie",
@@ -2150,6 +2169,11 @@
         "Delson"
     ],
     [
+        "Eddie",
+        "Condon%27s",
+        "Orchestra"
+    ],
+    [
         "Buddy",
         "Moreno",
         "and",
@@ -2213,7 +2237,7 @@
         "Hilliard"
     ],
     [
-        "Mana"
+        "Mana-Zucca"
     ],
     [
         "H",
@@ -2222,7 +2246,7 @@
     [
         "Charles",
         "Hart",
-        ""
+        "(i)"
     ],
     [
         "Clair",
@@ -2391,6 +2415,10 @@
         "Charles",
         "B",
         "Foster"
+    ],
+    [
+        "Dan",
+        "Burley"
     ],
     [
         "Frank",
@@ -2606,6 +2634,14 @@
     [
         "Sam",
         "Jennings"
+    ],
+    [
+        "Stan",
+        "Rubin%27s",
+        "Swing",
+        "Sextet",
+        "of",
+        "Prince"
     ],
     [
         "Max",

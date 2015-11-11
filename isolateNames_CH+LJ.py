@@ -19,7 +19,7 @@ for s,p,o in lj:
 
     if 'foaf/0.1/name' in p:
         if s not in ljNames:
-            ljNames[s] = [o]
+            ljNames[s] = o
 
 ##print (len(ljNames))
 
@@ -49,14 +49,15 @@ for s,p,o in ch:
 
     if 'foaf/0.1/name' in p:
         if s not in chNames:
-            chNames[s] = [o]
+            chNames[s] = o
 
-print (len(chNames))
+##print (len(chNames))
 
 #json dump (call the function)
 
 file = 'CH_allNames.json'
 print (json_write(chNames))
+
 
 
 

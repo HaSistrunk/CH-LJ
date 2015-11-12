@@ -1,5 +1,4 @@
-#Creates a list of dictionaries of all LJ URIs and CH URIs as key to their foaf:name
-
+#Creates two dictionaries of all LJ URIs and the CH URIs as keys to their foaf:name
 
 from rdflib import Graph
 import json
@@ -23,15 +22,10 @@ for s,p,o in lj:
 
 ##print (len(ljNames))
 
-#define function to dump to json
-
-def json_write(data):
-    with open (file, 'w') as f:
-        f.write(json.dumps(data, indent=4))
-
-
-file = 'LJ_allNames.json'
-print (json_write(ljNames))
+#write all LJ URIs and foaf:names to json file
+            
+with open ('LJ_allNames.json', 'w') as f:
+    f.write(json.dumps(ljNames, indent=4))
 
 
 
@@ -55,8 +49,8 @@ for s,p,o in ch:
 
 #json dump (call the function)
 
-file = 'CH_allNames.json'
-print (json_write(chNames))
+with open ('CH_allNames.json', 'w') as g:
+    g.write(json.dumps(chNames, indent=4))
 
 
 

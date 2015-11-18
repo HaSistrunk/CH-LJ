@@ -1,21 +1,21 @@
 import json
+import difflib
 
+matches = [ ]
+with open('LJ_dict.json') as json_data_LJ:
+    lj = json.load(json_data_LJ)
+    json_data_LJ.close()
 
-with open('CH_allNames.json') as json_data:
-    ch = json.load(json_data)
-    json_data.close()
+with open('CH_dict.json') as json_data_CH:
+    ch = json.load(json_data_CH)
+    json_data_CH.close()
 
-with open('LJ_allNames.json') as json_data_2:
-    lj = json.load(json_data_2)
-    json_data_2.close()
+for a_person in lj:
 
-sames = [ ]
+    for someone in ch:
 
-for a_performer in lj:
-    for another_one in ch:
-        if a_performer[0] == another_one[0]:
-            if a_performer not in sames:
-                sames.append(a_performer)
+        if a_person['full name'] == someone['full name']:
+            if a_person['full name'] not in matches:
+                matches.append("LJ:" + a_person['full name'] + "," + "CH:" + someone['full name'])
 
-with open ('Matches.json', 'w') as f:
-    f.write(json.dumps(sames, indent=4))
+print(len(matches))

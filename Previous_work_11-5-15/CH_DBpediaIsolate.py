@@ -43,5 +43,3 @@ with open ('CH_dbpedia.json', 'w') as f:
 
 with open ('CH_mints.json', 'w') as f:
     f.write(json.dumps(mintsCH ,indent=4))
-
-print(len(mintsCH))

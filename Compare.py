@@ -1,5 +1,6 @@
 import json
 
+
 with open('CH_allNames.json') as json_data:
     ch = json.load(json_data)
     json_data.close()

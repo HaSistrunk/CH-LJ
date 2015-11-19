@@ -14,8 +14,9 @@ for a_person in lj:
 
     for someone in ch:
 
-        if a_person['full name'] == someone['full name']:
-            if a_person['full name'] not in matches:
-                matches.append("LJ:" + a_person['full name'] + "," + "CH:" + someone['full name'])
+        if a_person['first name'] == someone['first name']:
+            if a_person['last name'] == someone['last name']:
+                if a_person not in matches:
+                    matches.append("LJ:" + " " + a_person['full name'] + "," + "CH:" + " " + someone['full name'])
 
-print(len(matches))
+print(matches)

@@ -1,13 +1,16 @@
 import json
 import csv
 
-with open ('relationships_of_matches.json', 'r') as matches:
-    relationships = json.load(matches)
+with open('relatesLJ.csv', 'w') as f:
+    writer = csv.writer(f)
 
-for someone in relationships:
-    for a_relationship in relationships[someone]:
-        target = relationships[someone][0]['target']
+    with open ('relationships_of_matches.json', 'r') as matches:
+        relationships = json.load(matches)
 
-    # print(target)
+    for someone in relationships:
+        for a_relationship in relationships[someone]:
+            target = a_relationship['target']
 
-print(someone)
+        # print(target)
+
+            writer.writerows([[someone,target]])

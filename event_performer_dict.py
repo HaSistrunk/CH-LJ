@@ -4,7 +4,6 @@
 
 from rdflib import Graph
 import json
-import csv
 
 
 events = Graph()
@@ -19,7 +18,7 @@ with open ('name-string-matches_CH-URI.json') as CH_URI_string_match:
 event_info = {}
 
         
-#Loop through the event data and find events and their associated performers from
+#Loop through the event data and find events and their associated performers
 #from the master list of matches (CH and LJ) using the LJ dataset URIs.        
 
 for s,p,o in events:
@@ -33,15 +32,13 @@ for s,p,o in events:
 #using the name parser string matching)and add them to the event dictionary
 
     for ch_mint in CH_URI_matches:
-        if ch_mint ==str(o):       
+        if ch_mint['CH URI'] ==str(o):
+            ch_mint['CH URI'] = ch_mint['LJ URI']
             if str(s) not in event_info:
                 event_info[str(s)] = []
-                if ch_mint == ch_mint ['CH URI']:
-                    ch_mint = ch_mint['LJ URI']
-            event_info[str(s)].append(ch_mint)
+            event_info[str(s)].append(ch_mint['CH URI'])
             
-#writing data to json gets rid of the RDFRef. I can then reopen it to replace the
-#CH mint URIs with their corresponding LJ URIs from the CH_URI_matches dictionary
+#write the dictionary to json
             
 with open ('event_performer_dict.json', 'w') as f:
     f.write (json.dumps(event_info, indent=4))

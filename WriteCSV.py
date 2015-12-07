@@ -1,6 +1,8 @@
 import json
 import csv
 
+alls = [ ]
+
 with open('relatesLJ.csv', 'w') as f:
     writer = csv.writer(f)
 
@@ -14,3 +16,12 @@ with open('relatesLJ.csv', 'w') as f:
         # print(target)
 
             writer.writerows([[someone,target]])
+
+with open('relatesLJ.csv','r') as f:
+
+    reader = csv.reader(f)
+
+    for a_row in reader:
+        alls.append(a_row)
+
+    print(len(alls))

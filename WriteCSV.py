@@ -6,7 +6,7 @@ import csv
 
 alls = [ ]
 
-with open('relatesLJ.csv', 'w') as f:
+with open('relatesLJ.csv', 'w', newline='') as f:
     writer = csv.writer(f)
 
     with open ('relationships_of_matches.json', 'r') as matches:

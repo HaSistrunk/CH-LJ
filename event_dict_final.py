@@ -24,6 +24,7 @@ with open ('event_performer_dict.json') as g:
                     
                 if performer == ch_mint['CH URI']:
                     performer = ch_mint['LJ URI']
+                    if performer not in 
                         #print (performer) # ->This prints the correct URI,
                                             # but I can't get it to stick in
                                             # the dictionary when I write to 

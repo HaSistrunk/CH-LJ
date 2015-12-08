@@ -1,3 +1,9 @@
+#Using the master list of matches between the LJ and CH datasets and the LJ
+#relationship triples, this script creates a dictionary where each key is a
+#LJ person, and each person key contains a list of dictionaries for each
+#person they are related to. This json output will be used to create a csv of
+#source and target for use in Gephi
+
 from rdflib import Graph
 import json
 
@@ -19,6 +25,7 @@ with open ('master_matches.json', 'r') as matches:
     master_matches = json.load(matches)
 
 # print(master_matches)
+
 for a_match in master_matches:
     for s,p,o in lj:
         if str(p)=="http://purl.org/vocab/relationship/knowsOf":

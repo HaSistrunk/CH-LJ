@@ -3,8 +3,12 @@
 
 import json
 import csv
+from rdflib import Graph
 
 alls = [ ]
+
+lj = Graph()
+lj.parse("lj_data.nt", format="nt")
 
 with open('relatesLJ.csv', 'w', newline='') as f:
     writer = csv.writer(f)
@@ -16,15 +20,28 @@ with open('relatesLJ.csv', 'w', newline='') as f:
         for a_relationship in relationships[someone]:
             target = a_relationship['target']
 
-        # print(target)
+#Change the URI to the foafName for output to csv
+            for s,p,o in lj:
+                if "foaf/0.1/name" in p:
+                    if someone == str(s): 
+                        someone = str(o)
+                    if target == str(s):
+                        target = str(o)
+                        
 
-            writer.writerows([[someone,target]])
+    
+    
+##                        print(someone, target)
 
-with open('relatesLJ.csv','r') as f:
+                        writer.writerows([[someone,target]])
 
-    reader = csv.reader(f)
+            
 
-    for a_row in reader:
-        alls.append(a_row)
-
-    print(len(alls))
+##with open('relatesLJ.csv','r') as f:
+##
+##    reader = csv.reader(f)
+##
+##    for a_row in reader:
+##        alls.append(a_row)
+##
+##    print(len(alls))

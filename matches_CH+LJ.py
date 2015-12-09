@@ -54,34 +54,7 @@ with open ('CH_allNames.json', 'r') as CH_data:
         g.write(json.dumps(ch_match, indent=4))
 
 
-       
-#from nameparser import HumanName
 
-#Thinking about using human name parser to further compare names beyond match of both first and last
-#parse name into parts
-        #ljname = HumanName(ljperson)
-        
-#name is parsed. Can print specific parts of name like first, last, middle
-        #print (ljname)
-        #print (name.first)
-        #print (name.middle)
-                   
-#nicknames are indicated as &quot;Moms&quot;
-#The human name parser is pulling these out as middle names
-        
-            
-    
-##
-##        for URI in chdata:
-##            chperson = (chdata[URI])
-##            chname = HumanName(chperson)
-##            #print (chname)
-##        
-##            
-##            if ljname == chname:
-##                if ljname not in lj_ch_match:
-##                    lj_ch_match.append(ljname)
-##            print (lj_ch_match)
                 
 
 

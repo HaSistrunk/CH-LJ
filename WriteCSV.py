@@ -28,9 +28,6 @@ with open('relatesLJ.csv', 'w', newline='') as f:
                     if target == str(s):
                         target = str(o)
                         
-
-    
-    
 ##                        print(someone, target)
 
                         writer.writerows([[someone,target]])

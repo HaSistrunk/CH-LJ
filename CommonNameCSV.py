@@ -10,9 +10,9 @@ lined_up = { }
 lj = Graph()
 lj.parse("lj_data.nt", format="nt")
 
-#open CSV file to write out URI, commonName
-with open('relates_linksreplaced.csv', 'w', newline='') as f:
-    writer = csv.writer(f)
+# #open CSV file to write out URI, commonName
+# with open('relates_linksreplaced.csv', 'w', newline='') as f:
+#     writer = csv.writer(f)
 
 #parse master list of source-targets
     with open('relatesMASTER.csv', 'r') as f:
@@ -32,8 +32,8 @@ with open('relates_linksreplaced.csv', 'w', newline='') as f:
                 for a_link in links:
                     if a_link==str(s):
                         lined_up[a_link] = str(o)
-
-                    writer.writerows([[a_link, str(o)]])
+print(lined_up)
+                    # writer.writerows([[a_link, str(o)]])
 
 
             #finish script -> need to find the URIs beginning for 'http' in

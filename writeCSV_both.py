@@ -2,6 +2,8 @@
 #them out to a new csv. These are the relationships that exist in both the LJ
 #and CH datasets
 
+#note: to run script, remove the "CH" or "LJ" designations from relatesMaster.csv
+
 
 import csv
 

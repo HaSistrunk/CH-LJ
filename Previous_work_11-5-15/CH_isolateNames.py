@@ -1,5 +1,5 @@
-
-#This script creates a json file from a list of all CH dbpedia URIs
+#This script loops through the chAddressBook.net and creates a dictionary
+#of CH URIs (people) as they key, and their foaf:Name as the value.
 
 
 from rdflib import Graph
@@ -14,7 +14,7 @@ ch = Graph()
 ch.parse("chAddressBook.nt", format="nt")
 
 
-#create dictionary to fill with sweet, sweet, names
+#create dictionary to fill with CH names
 chNames = { }
 
 #loop through triples finding all with foaf name property
@@ -28,4 +28,4 @@ for s, p, o in ch:
 with open ('CH_allNames.json', 'w') as f:
     f.write(json.dumps(chNames ,indent=4))
 
-print(len(chNames))
+#print(len(chNames)) #19197 people

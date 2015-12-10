@@ -37,8 +37,7 @@ for a_person in lj:
 
 matches.sort()
 
-#print (len(matches))
-
+#print (len(matches)) #264 people
 
 
 with open ('name-string-matches.json', 'w') as f:

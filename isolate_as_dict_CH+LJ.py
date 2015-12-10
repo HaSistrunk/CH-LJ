@@ -1,5 +1,5 @@
-#similar to the isolateNames_CH+LJ script, this creates a list of dictionaries
-#of the URI and foaf:name of each person for each dataset
+#this creates a list of dictionaries of the URI and foaf:name of each person for each dataset. It
+#uses the Python Human Name Parser module to seperate the names into first and last names
 
 from rdflib import Graph
 import json

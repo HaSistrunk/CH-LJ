@@ -41,9 +41,9 @@ for a_match in master_matches:
                     one_matchRELs["target"] = s
                 match_relationships[a_match].append(one_matchRELs)
 
-print(len(match_relationships))
+##print(len(match_relationships))
 
-##with open ('relationships_of_matches.json', 'w') as f:
+with open ('relationships_of_matches.json', 'w') as f:
     f.write(json.dumps(match_relationships, indent=4))
 
 

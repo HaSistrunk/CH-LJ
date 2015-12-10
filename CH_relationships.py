@@ -20,7 +20,9 @@ for an_event in event_dict:
                 if a_player not in dictionary:
                     dictionary[a_player] = []
                 if other_player not in dictionary[a_player]:
-                    dictionary[a_player].append(other_player)                   
+                    dictionary[a_player].append(other_player)
+
+##print (len(dictionary))
             
 with open ('relationshipsCH.json', 'w') as f:
     f.write (json.dumps(dictionary, indent=4))

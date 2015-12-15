@@ -12,9 +12,7 @@ import json
 lj = Graph()
 
 #Parse source, adding the resulting triples to the Graph.
-#The file source is specified with a parameter added for format
 lj.parse("relationships.nt", format="nt")
-
 
 # for s,p,o in lj:
 #     print(s)

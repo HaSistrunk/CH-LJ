@@ -33,12 +33,3 @@ with open('relatesLJ.csv', 'w', newline='') as f:
                         writer.writerows([[someone,target]])
 
             
-
-##with open('relatesLJ.csv','r') as f:
-##
-##    reader = csv.reader(f)
-##
-##    for a_row in reader:
-##        alls.append(a_row)
-##
-##    print(len(alls))

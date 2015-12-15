@@ -1,6 +1,6 @@
-#this script finds the dBpedia URI matches between the LJ dataset and the
-#CH event performers (there are more DBpedia URI's in the event data than
-#in the addressbook.nt file). It saves the dbpedia matches to a list.
+#this script finds the DBpedia URI matches between the LJ dataset and the
+#CH event performers (there are more DBpedia URI's available in the event data
+#than in the addressbook.nt file). It saves the DBpedia matches to a list.
 
 from rdflib import Graph
 import json

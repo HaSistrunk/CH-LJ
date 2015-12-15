@@ -29,7 +29,7 @@ with open ('relatesMaster.csv', 'r') as f:
             
             writer.writerows([[source, target]])
             
-##print (len(duplicate_rows))
+print (len(duplicate_rows))
 
                 
 #this script (below) was used to assure that there were no duplicates in the
@@ -42,7 +42,7 @@ with open ('relatesMaster.csv', 'r') as f:
 ##duplicate_rows = []
 ##unique_rows = []
 ##
-##with open ('relatesCH.csv', 'r') as f:
+##with open ('relatesLJ.csv', 'r') as f:
 ##    reader = csv.reader(f)
 ##
 ##

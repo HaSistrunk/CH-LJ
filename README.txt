@@ -52,7 +52,7 @@ Step B: Pull relationship data from LJ for the people that exist in both dataset
 5) get_LJ_relationships.py
 From the list of 373 matches between the datasets, uses LJ relationships.nt RDF triples to create a dictionary where the key is an LJ person URI with the value as a list of each person (URI) they know of.
         
-6) WriteCSV_LJ.py
+6) writeCSV_LJ.py
 Writes a csv file of the LJ relationships, with a row for each knowsOf relationship. The script converts the URIs in the relationships_of_matches.json to their foafName equivalents for output to the csv.
 -3058 relationships (after removing four duplicates manually that were id'ed using Python)
         

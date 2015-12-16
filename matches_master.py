@@ -1,6 +1,6 @@
 #this script combines the two lists of LJ-CH matches from string matches of names
 #from the full set of CH people, and DBpedia matches from the CH event data. It
-#creates a new list of LJ's URIs for all matches.
+#creates a new list of LJ's URIs for all matches
 
 import json
 

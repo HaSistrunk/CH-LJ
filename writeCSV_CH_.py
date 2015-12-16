@@ -1,5 +1,5 @@
 #Creates a csv file of source and target from the CH relationships dictionary
-#to be used for Gephi visualization
+#to be used for Gephi visualization.
 
 import json
 import csv

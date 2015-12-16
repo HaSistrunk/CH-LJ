@@ -2,7 +2,7 @@
 #to find string matches between them and writes out a list of the LJ URIs
 #associated with the person match AND a seperate dictionary of the CH URIs
 #and their corresponding LJ URIs that match to be used later in working
-#with the event data, which uses some CH mints)
+#with the event data, which uses some CH mints).
 
 import json
 

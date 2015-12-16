@@ -34,25 +34,25 @@ Step A: Identify names/people in both the CH and LJ datasets
 1) isolate_as_dict_CH+LJ.py
 Uses the Python Human Name Parser module to separate the foaf:Name of each person from LJ (lj_data.nt) and CH (chAddressBook.nt) into its parts - full name, first name, last name. 
       
-2) Compare_parsed_names.py
+2) compare_parsed_names.py
 Compares the parsed human names from CH and LJ to find matches in first AND last name	 
 -264 people match
 
-3) Compare_from_event_data.py
+3) compare_from_event_data.py
 Using the Python RDFLib library to work with RDF, finds the DBpedia URI matches between the LJ dataset (lj_data.nt) and the CH event performers (ch_linkedJazz.nt) and writes them to a list. The event data was used because it contained more DBpedia URIs than the chAddressBook.nt.
 -268 people match
 
-4) Matches-master.py
+4) matches_master.py
 Combines the lists of LJ-CH people matched from the Human Name Parser string matching and the DBpedia URI matches. Dispensing with duplicates, it writes the URI from the LJ dataset for every match to a list.
 -373 people match
 
 
 Step B: Pull relationship data from LJ for the people that exist in both datasets
 
-5) Get_relationships.py
+5) get_LJ_relationships.py
 From the list of 373 matches between the datasets, uses LJ relationships.nt RDF triples to create a dictionary where the key is an LJ person URI with the value as a list of each person (URI) they know of.
         
-6) WriteCSV.py
+6) WriteCSV_LJ.py
 Writes a csv file of the LJ relationships, with a row for each knowsOf relationship. The script converts the URIs in the relationships_of_matches.json to their foafName equivalents for output to the csv.
 -3058 relationships (after removing four duplicates manually that were id'ed using Python)
         
@@ -62,10 +62,10 @@ Step C: Derive CH relationships from CH event data for the people that exist in 
 7) event_performer_dict.py
 Creates a dictionary of all CH events and their performers (URIs). Selects for performers who are in both the LJ and CH datasets. It also cleans the output so that all URIs match the URIs used in the LJ dataset (replaces CH minted URIs)
         
-8) CH_relationships.py
+8) get_CH_relationships.py
 Creates a dictionary of performers (key) and a list of other performers that they 'played' in the same event with (value).
         
-9) WriteCSV_CH.py
+9) writeCSV_CH.py
 Writes a csv file of the CH relationships, with a row for each relationship. The script converts the URIs in the relationshipsCH.json to their foafName equivalents for output to the csv.
 -6706 relationships
 

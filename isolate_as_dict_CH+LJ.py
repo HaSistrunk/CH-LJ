@@ -1,5 +1,6 @@
-#this creates a list of dictionaries of the URI and foaf:name of each person for each dataset. It
-#uses the Python Human Name Parser module to seperate the names into first and last names
+#this creates a list of dictionaries of the URI and foaf:name of each person
+#for each dataset. It uses the Python Human Name Parser module to seperate
+#the names into first and last names.
 
 from rdflib import Graph
 import json
@@ -48,6 +49,7 @@ for x,y,z in ch:
         CHdict['last name'] = chname.last
         CHdict['CH_URI']=x
         chNames.append(dict(CHdict))
+
         
 ##    for CHdict in chNames:
 ##        if (CHdict['CH_URI']) == x and "owl#sameAs" in y and "http://dbpedia.org/resource" in z:

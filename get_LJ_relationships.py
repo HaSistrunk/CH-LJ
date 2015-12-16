@@ -2,7 +2,7 @@
 #relationship triples, this script creates a dictionary where each key is a
 #LJ person, and each person key contains a list of dictionaries for each
 #person they are related to. This json output will be used to create a csv of
-#source and target for use in Gephi
+#source and target for use in Gephi.
 
 from rdflib import Graph
 import json

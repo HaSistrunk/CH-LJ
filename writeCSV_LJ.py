@@ -1,5 +1,5 @@
 #Creates csv file of source and target of LJ KnowsOf relationships for use in
-#Gephi visualization
+#Gephi visualization.
 
 import json
 import csv

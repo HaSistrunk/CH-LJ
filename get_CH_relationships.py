@@ -1,7 +1,7 @@
 #This script loops through the dictionary of events (keys) and performers (values)
 #and creates a new dictionary of each performer (key) and a list of other
 #performers that they played in events with (values). This puts the data in a
-#format where we can work with the relationships between performers  
+#format where we can work with the relationships between performers.  
 
 import json
 
